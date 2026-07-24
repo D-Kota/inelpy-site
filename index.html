@@ -15,27 +15,27 @@
     --muted:#716C63;
     --line:rgba(28,27,25,0.14);
     --line-strong:rgba(28,27,25,0.35);
-    /* one source of truth for side space: never below 24px,
-       scales with viewport, never above 48px */
-    --gutter:clamp(24px, 6vw, 48px);
   }
   *{margin:0;padding:0;box-sizing:border-box}
   body{
     background:var(--paper);
     color:var(--ink);
     font-family:'Newsreader',serif;
-    font-size:clamp(16px, 1.1vw + 12px, 18px);
+    font-size:clamp(15px, 1vw + 11px, 18px);
     line-height:1.6;
     -webkit-font-smoothing:antialiased;
   }
+  /* content panel: an 84%-wide column, capped at 680px.
+     On a 390px phone this yields a ~328px panel with ~31px
+     clear on each side — the panel shrinks, margins emerge. */
   .wrap{
+    width:84%;
     max-width:680px;
-    margin:0 auto;
-    padding-left:var(--gutter);
-    padding-right:var(--gutter);
+    margin-left:auto;
+    margin-right:auto;
   }
 
-  header{padding-top:38px}
+  header{padding-top:36px}
 
   .brandline{
     display:flex;
@@ -45,28 +45,28 @@
   }
   .brand{
     font-weight:600;
-    font-size:clamp(1.4rem, 4vw, 2rem);
+    font-size:clamp(1.25rem, 3.2vw, 2rem);
     letter-spacing:-0.015em;
     color:var(--ink);
     text-decoration:none;
   }
   .pron{
-    font-size:clamp(1rem, 2.9vw, 1.45rem);
+    font-size:clamp(0.95rem, 2.4vw, 1.45rem);
     color:var(--muted);
     font-weight:400;
   }
   .pos{
     font-style:italic;
     color:var(--muted);
-    font-size:clamp(1rem, 2.9vw, 1.45rem);
+    font-size:clamp(0.95rem, 2.4vw, 1.45rem);
   }
 
   /* dictionary entry hero */
-  .entry{padding:min(10vh, 96px) 0 min(9vh, 80px)}
+  .entry{padding:min(9vh, 88px) 0 min(8vh, 72px)}
   .definition{
     font-weight:400;
-    font-size:clamp(1.35rem, 4.6vw, 2.05rem);
-    line-height:1.45;
+    font-size:clamp(1.2rem, 3.9vw, 2.05rem);
+    line-height:1.5;
     letter-spacing:-0.005em;
   }
   .definition .num{
@@ -82,10 +82,10 @@
   .rule{border:none;border-top:1px solid var(--line-strong)}
 
   /* senses / focus areas */
-  .senses{padding:56px 0 24px}
+  .senses{padding:48px 0 20px}
   .label{
     font-family:'Inter',sans-serif;
-    font-size:0.74rem;
+    font-size:0.72rem;
     font-weight:500;
     letter-spacing:0.2em;
     text-transform:uppercase;
@@ -94,20 +94,20 @@
   }
   .sense{
     display:grid;
-    grid-template-columns:2.2em 1fr;
-    padding:24px 0;
+    grid-template-columns:2em 1fr;
+    padding:22px 0;
   }
   .sense + .sense{border-top:1px solid var(--line)}
   .sense .num{
     font-family:'Inter',sans-serif;
-    font-size:0.9rem;
+    font-size:0.85rem;
     font-weight:500;
     color:var(--muted);
     padding-top:0.45em;
   }
   .sense h2{
     font-weight:500;
-    font-size:clamp(1.25rem, 3.4vw, 1.5rem);
+    font-size:clamp(1.15rem, 2.9vw, 1.5rem);
     letter-spacing:-0.01em;
   }
   .sense p{
@@ -123,7 +123,7 @@
   }
   .sense a:hover{color:var(--muted)}
 
-  .origin{padding:36px 0 72px}
+  .origin{padding:32px 0 64px}
   .origin p{color:var(--muted);max-width:36em}
   .origin .lead{
     font-style:italic;
@@ -141,7 +141,7 @@
 
   footer{
     border-top:1px solid var(--line);
-    padding:28px 0 52px;
+    padding:26px 0 48px;
     font-family:'Inter',sans-serif;
     font-size:0.85rem;
     color:var(--muted);
