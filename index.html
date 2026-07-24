@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Inelpy — research at the intersection of computational statistics, human language, and conversational machine learning</title>
-<meta name="description" content="Inelpy — research at the intersection of computational statistics, human language, and conversational machine learning. Created by Dakota Ellis.">
+<title>Inelpy — research at the intersection of computational statistics, human language, and conversational AI</title>
+<meta name="description" content="Inelpy — research at the intersection of computational statistics, human language, and conversational artificial intelligence. Created by Dakota Ellis.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -34,7 +34,10 @@
     .wrap{padding:0 32px}
   }
 
-  header{padding:38px 0 0}
+  header{padding:38px 0 0 32px}
+  @media (max-width:640px){
+    header{padding:34px 0 0 24px}
+  }
   .brandline{
     display:flex;
     align-items:baseline;
@@ -160,7 +163,7 @@
 </head>
 <body>
 
-<header class="wrap">
+<header>
   <div class="brandline">
     <a class="brand" href="/">inelpy</a>
     <span class="pron">[in·el·py]</span>
@@ -196,7 +199,7 @@
   </section>
 
   <section class="origin wrap">
-    <p><span class="lead">origin:</span><strong>Created by <a href="https://www.linkedin.com/in/dwellis/" rel="me">Dakota Ellis</a></strong> — founder, data scientist, and AI builder. Inelpy is where the language research lives; it grows as the work does.</p>
+    <p><span class="lead">origin:</span><strong>Created by <a href="https://www.linkedin.com/in/dwellis/" rel="me">Dakota Ellis</a></strong> — data scientist and AI builder. Inelpy is where the language research lives; it grows as the work does.</p>
   </section>
 </main>
 
