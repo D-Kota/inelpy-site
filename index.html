@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inelpy — research at the intersection of computational statistics, human language, and conversational AI</title>
+<meta name="description" content="Inelpy — research at the intersection of computational statistics, human language, and conversational artificial intelligence. Created by Dakota Ellis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF8F3;
+    --ink:#1C1B19;
+    --muted:#716C63;
+    --line:rgba(28,27,25,0.14);
+    --line-strong:rgba(28,27,25,0.35);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Newsreader',serif;
+    font-size:18px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 28px}
+
+  header{padding:38px 0 0}
+  .brandline{
+    display:flex;
+    align-items:baseline;
+    gap:0.6em;
+    flex-wrap:wrap;
+  }
+  .brand{
+    font-weight:600;
+    font-size:1.5rem;
+    letter-spacing:-0.01em;
+    color:var(--ink);
+    text-decoration:none;
+  }
+  .pron{
+    font-size:1.05rem;
+    color:var(--muted);
+    font-weight:400;
+  }
+
+  /* dictionary entry hero */
+  .entry{padding:10vh 0 9vh}
+  .pos{
+    font-style:italic;
+    color:var(--muted);
+    font-size:1.05rem;
+  }
+  .definition{
+    font-weight:400;
+    font-size:clamp(1.5rem,3.4vw,2.15rem);
+    line-height:1.45;
+    letter-spacing:-0.005em;
+    max-width:26em;
+  }
+  .definition .num{
+    font-family:'Inter',sans-serif;
+    font-size:0.75em;
+    font-weight:500;
+    color:var(--muted);
+    margin-right:0.6em;
+    vertical-align:0.12em;
+  }
+  .definition i{font-style:italic}
+
+  .rule{border:none;border-top:1px solid var(--line-strong)}
+  .rule.faint{border-top-color:var(--line)}
+
+  /* senses / focus areas */
+  .senses{padding:56px 0 28px}
+  .label{
+    font-family:'Inter',sans-serif;
+    font-size:0.74rem;
+    font-weight:500;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:2em;
+  }
+  .sense{
+    display:grid;
+    grid-template-columns:2.2em 1fr;
+    padding:24px 0;
+  }
+  .sense + .sense{border-top:1px solid var(--line)}
+  .sense .num{
+    font-family:'Inter',sans-serif;
+    font-size:0.9rem;
+    font-weight:500;
+    color:var(--muted);
+    padding-top:0.45em;
+  }
+  .sense h2{
+    font-weight:500;
+    font-size:1.5rem;
+    letter-spacing:-0.01em;
+  }
+  .sense p{
+    margin-top:0.5em;
+    color:var(--muted);
+    max-width:36em;
+  }
+  .sense a{
+    color:var(--ink);
+    text-decoration:underline;
+    text-decoration-thickness:1px;
+    text-underline-offset:3px;
+  }
+  .sense a:hover{color:var(--muted)}
+
+  .origin{padding:40px 0 80px}
+  .origin p{color:var(--muted);max-width:36em}
+  .origin .lead{
+    font-style:italic;
+    color:var(--muted);
+    margin-right:0.4em;
+  }
+  .origin strong{color:var(--ink);font-weight:500}
+  .origin a{
+    color:var(--ink);
+    text-decoration:underline;
+    text-decoration-thickness:1px;
+    text-underline-offset:3px;
+  }
+  .origin a:hover{color:var(--muted)}
+
+  footer{
+    border-top:1px solid var(--line);
+    padding:30px 0 56px;
+    font-family:'Inter',sans-serif;
+    font-size:0.85rem;
+    color:var(--muted);
+  }
+
+  a:focus-visible{
+    outline:2px solid var(--ink);
+    outline-offset:3px;
+  }
+  @media (prefers-reduced-motion:no-preference){
+    .brandline{animation:rise .6s ease both}
+    .definition{animation:rise .7s ease both;animation-delay:.1s}
+    @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  }
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="brandline">
+    <a class="brand" href="/">inelpy</a>
+    <span class="pron">[in·el·py]</span>
+    <span class="pos">n.</span>
+  </div>
+</header>
+
+<main>
+  <section class="entry wrap">
+    <h1 class="definition"><span class="num">1</span>research at the intersection of <i>computational statistics</i>, <i>human language</i>, and <i>conversational artificial intelligence</i>.</p>
+  </section>
+
+  <hr class="rule wrap" style="max-width:664px">
+
+  <section class="senses wrap">
+    <p class="label">Current focus</p>
+
+    <div class="sense">
+      <span class="num">1.</span>
+      <div>
+        <h2>Lexicontext</h2>
+        <p>A computational linguistics tool in development for conversational AI. Details will be shared as the work matures.</p>
+      </div>
+    </div>
+
+    <div class="sense">
+      <span class="num">2.</span>
+      <div>
+        <h2>Language learning, grounded in research</h2>
+        <p>A learning app built on the findings of <a href="https://arxiv.org/abs/2512.15552"><i>From Data to Dialogue: Unlocking Language for All</i></a> — research showing that specialized, corpus-driven word lists give learners meaningfully better vocabulary coverage than general-purpose lists.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="origin wrap">
+    <p><span class="lead">origin:</span><strong>Created by <a href="https://www.linkedin.com/in/dwellis/" rel="me">Dakota Ellis</a></strong> — data scientist and AI builder. Inelpy is where the language research lives; it grows as the work does.</p>
+  </section>
+</main>
+
+<footer class="wrap">
+  © 2026 Inelpy
+</footer>
+
+</body>
+</html>
